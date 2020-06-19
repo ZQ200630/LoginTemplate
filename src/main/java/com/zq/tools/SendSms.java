@@ -13,7 +13,7 @@ import javax.swing.text.html.FormSubmitEvent;
 
 public class SendSms {
     public static void test(String phoneNum, String code) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAImAfdtxmlwMv9", "ekPi10TzQCfIJoYKLCzPXUlbI6seSS");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "username", "password");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         request.setMethod(MethodType.POST);
